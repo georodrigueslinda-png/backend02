@@ -55,6 +55,15 @@ response.json({ id: user[0].id, name: user[0].name})
  } )
 })
 
+
+
+
+app.post("/score", (request, response) => {
+const { id, score } = request.body.userScore
+
+})
+
+
 app.listen(port, () => {
     console.log(`Servidor rodando na porta: ${port}`)
     
